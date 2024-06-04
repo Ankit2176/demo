@@ -1,4 +1,8 @@
 Hello World !
 This is a Second Line in the File.
 Hii My name i Anne
+<<<<<<< HEAD
 i am from china
+=======
+and i am benali
+>>>>>>> 6fe23cb (benali)
