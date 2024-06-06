@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      div {
+        color: rgb(239, 0, 247);
+        background-color: antiquewhite;
+        font-family: "Courier New", Courier, monospace;
+      }
+      table {
+        width: 100%;
+        height: 600px;
+        border: 5px solid rgb(184, 36, 224);
+        border-radius: 20px;
+        border-spacing: 10px;
+      }
+
+      table tr:nth-child(odd) {
+        width: 400px;
+        background-color: rgb(84, 93, 218);
+        justify-content: center;
+      }
+
+      table tr:nth-child(even) {
+        width: 400px;
+        background-color: rgb(17, 54, 218);
+      }
+
+      th {
+        border: 2px solid rgb(102, 17, 128);
+        border-radius: 20px;
+        width: 400px;
+        background-color: rgb(34, 65, 54);
+        font-style: oblique;
+        font-size: xx-large;
+        height: 150px;
+        margin: 10px;
+      }
+      td {
+        border: 3px dashed salmon;
+        text-align: center;
+        border-radius: 6px;
+        font-size: x-large;
+      }
+
+      td:hover{
+        color: rgb(30, 255, 0);
+      }
+      th:hover{
+        background-color: bisque;
+        border: 2px dashed rgb(195, 0, 255);
+        border-radius: 100px;
+      }
+      legend,
+      caption {
+        color: black;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <legend>Code Acadmy</legend>
+        <caption>
+          Student Code Table
+        </caption>
+        <tr>
+          <th>Sn</th>
+          <th>Name</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Max</td>
+          <td>NDIH</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jack</td>
+          <td rowspan="2">LKKJ</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Jonathan</td>
+        
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Anix</td>
+          <td>NBVBCN</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>Silly</td>
+          <td>KOKMIKMO</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td colspan="2">herry not registerd person</td>
+     
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
