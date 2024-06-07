@@ -20,6 +20,7 @@
         font-size: x-large;
         text-shadow: 5px 5px 5px grey;
         color: rgb(175, 213, 218);
+        
       }
 
       /* nav */
@@ -42,7 +43,7 @@
         
         height: 400px;
         width: 100%;
-        background-color: blanchedalmond;
+        background-color:azure;
         border: 3px solid black;
      
       } 
@@ -61,17 +62,50 @@
         font-size: 20px;
       }
 
+.point{
+  width:100%;
+  height:40vw;
+  background-color: aqua;
+  background-image:url(img/pexels-houzlook-3356416.jpg);
+  background-repeat: no-repeat;
+ background-size:cover;
+} 
 
+.container {
+        display: grid;
+        grid-template-rows: repeat(3, 10vw);
+        grid-template-columns: repeat(6, 15vw);
 
+        padding:4%
+      }
 
-
-      /* .sub-hero {
-       
-        width: 500px;
-        background-color: beige;
+     .container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 3%;
+      }
+      .container  img:hover {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border: 3px solid lightpink;
+      }
+      .box {
+        margin: 1%;
       
-        border: 3px solid black;
-      } */
+        overflow: hidden;
+      }
+      .box:hover {
+        margin: 1%;
+      
+        overflow: hidden;
+        box-shadow: 0px 0px 50px rgb(255, 255, 255);
+      }
+
+    .foot{
+      height: 800px;
+    }
     </style>
   </head>
   <br>
@@ -87,6 +121,11 @@
         <li><a href="contact.html">CONTACT US</a></li>
         <li><a href="TBL.HTML">TABLE</a></li>
         <li><a href="learn.html">Learnin Point </a></li>
+        <li><a href="Exercise1.html">Exercise1</a></li>
+        <li><a href="Exercise2.html">Exercise2</a></li>
+        <li><a href="Exercise3.html">Exercise3</a></li>
+        <li><a href="Exercise4.html">Exercise4</a></li>
+
       </ul>
     </nav>
 
@@ -111,27 +150,79 @@
        
     </div>
     
+<div class="point" >
+  <div class="container">
+    <div class="box box-one">
+      <img src="img/photo-1455619452474-d2be8b1e70cd.jpg" alt="dd" />
+    </div>
 
-    <!-- <div class="Main">
-      <img src="img/1.jpg" alt="1.jpg img" />
-      <img src="img/download (1).jpg" alt="1.jpg img" />
-
-      <img src="img/download.jpg" alt="1.jpg img" />
-
+    <div class="box box-two">
+      <img src="img/pexels-airamdphoto-20873207.jpg" alt="dd" />
+    </div>
+    <div class="box box-three">
+      <img src="img/pexels-elevate-1267321.jpg" alt="dd" />
+    </div>
+    <div class="box box-four"><img src="img/download.jpg" alt="" /></div>
+    <div class="box box-five">
+      <img src="img/pexels-vince-2227832.jpg" alt="" />
+    </div>
+    <div class="box box-six">
+      <img src="img/pexels-orlovamaria-4915847.jpg" alt="" />
+    </div>
+    <div class="box box-seven">
+      <img src="img/pexels-houzlook-3356416.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img src="img/pexels-vince-2227832.jpg" alt="" />
+    </div>
+    <div class="box">
       <img
         src="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"
-        alt="1.jpg img"
+        alt=""
       />
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-        temporibus harum odit cum cumque, veniam eveniet repellat consequunturs
-        sint voluptatum, provident alias beatae.
-      </p>
-    </div> -->
+    </div>
+    <div class="box box-six">
+      <img src="img/pexels-orlovamaria-4915847.jpg" alt="" />
+    </div>
+    <div class="box box-seven">
+      <img src="img/pexels-houzlook-3356416.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img src="img/pexels-vince-2227832.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img
+        src="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"
+        alt=""
+      />
+    </div>
+    <div class="box">
+      <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img src="img/pexels-vince-2227832.jpg" alt="" />
+    </div>
+    <div class="box">
+      <img
+        src="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"
+        alt=""
+      />
+    </div>
+</div>
+  
     
   </body>
   <footer>
-    <a href="ghome.html"><img src="https://banner2.cleanpng.com/20180413/rfe/kisspng-google-logo-google-cloud-platform-gboard-google-pa-4-5ad0e95b57ec99.9189954815236406673602.jpg " alt="g home" height="100px"></a>
+  <div class="foot">
+    <video height="1000px" width="100%"  autoplay muted controls>
+      <source  src="https://youtu.be/L0PSxBh31NI?si=lCjAOlaGuhbPge0U" type="video/mp4" >
+    </video> 
+  </div>
   </footer>
 </html>
