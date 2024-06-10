@@ -12,9 +12,73 @@
       width: 300px;
       background-color: tomato;
       box-shadow: 12px 12px 1px lightgray;
+      display: flex;
+    }
+
+    .Box:hover {
+      border-radius: 100px;
+      width: 300px;
+      background-color: rgb(17, 131, 197);
+      box-shadow: 12px 12px 1px lightgray;
+      transition: all;
+      transition-duration: 5s;
+      transition-timing-function: ease-out;
+    }
+
+    .box1 {
+      height: 50px;
+      width: 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box1:hover {
+      transition: all;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+
+      height: 300px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        transition: all;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        background-color: rgba(19, 154, 233, 0.452);
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(240, 241, 245);
+        border-radius: 50px;
+        list-style-type: none;
+        height: 20px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    li {
+      background-color: antiquewhite;
+      color: blueviolet;
+      border: 2px solid rgb(25, 219, 145);
+      list-style-type: none;
+      height: 20px;
+      width: 40px;
     }
   </style>
   <body>
-    <div class="Box"></div>
+    <div class="Box">
+      <div class="box1">
+        <li>rahul</li>
+        <li>joy</li>
+        <li>max</li>
+        <li>raani</li>
+      </div>
+    </div>
   </body>
 </html>
