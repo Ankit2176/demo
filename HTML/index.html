@@ -13,28 +13,108 @@
       }
       /* header  */
       header {
+        width: 100%;
         background-color: antiquewhite;
         text-align: center;
-        padding: 15px;
+      
         font-family: "Courier New", Courier, monospace;
         font-size: x-large;
         text-shadow: 5px 5px 5px grey;
         color: rgb(175, 213, 218);
-        
+        position: fixed;
+        overflow: hidden;
+        height: 70px;
+       
+      }
+      header:hover {
+        width: 100%;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+      
+        font-family: "Courier New", Courier, monospace;
+        font-size: xx-large;
+        text-shadow: 1px 1px 10px rgb(96, 200, 214);
+        color: rgb(175, 213, 218);
+        position: fixed;
+        overflow: hidden;
+        height: 70px;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+       
       }
 
       /* nav */
       nav {
+       margin-top: 70px;
+        height: 30px;
+        width: 100%;
         color: rgb(53, 54, 53);
         background-color: beige;
         text-align: end;
-        text-decoration-style: wavy;
+     
+        position: fixed;
+        
+       
       }
+
+        
+      @media screen and (max-width:500px) {
+     
+
+      nav {
+       margin-top: 70px;
+        height: 72px;
+        width: 100%;
+        color: rgb(53, 54, 53);
+        background-color: beige;
+        text-align:center;
+     
+        position: fixed;
+      
+      }
+      .hero img {
+        height: 300px;
+        
+        /* position: absolute; */
+    
+        padding: 90px 50px 0px 50px; 
+        float: left;
+        margin-right: 10%;
+        margin-top: 20%;
+      }
+
+
+      div.hero {
+        
+        height: 800px;
+        width: 100%;
+        background-color:azure;
+        border: 3px solid rgb(190, 190, 190);
+     
+      } 
+      
+    }
       li {
         padding: 3px;
         display: inline-block;
+        text-transform: uppercase;
+        
+      }
+      li:hover {
+        padding: 3px;
+        display: inline-block;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.74);
+        
       }
 
+
+     li a{
+        text-decoration: none;
+        color: rgba(207, 79, 169, 0.445);
+      }
+
+     
       /* body */
       /* .main {
         display: block;
@@ -44,7 +124,7 @@
         height: 400px;
         width: 100%;
         background-color:azure;
-        border: 3px solid black;
+        border: 3px solid rgb(190, 190, 190);
      
       } 
       .hero img {
@@ -52,12 +132,12 @@
         
         /* position: absolute; */
     
-        padding: 50px 50px 0px 50px; 
+        padding: 90px 50px 0px 50px; 
         float: left;
         margin-right: 10%;
       }
       .hero p{
-        margin: 20px 20px 20px 20px ;
+        margin: 80px 20px 20px 20px ;
         padding: 50px 100px 0px 0px;
         font-size: 20px;
       }
@@ -103,12 +183,13 @@
         box-shadow: 0px 0px 50px rgb(255, 255, 255);
       }
 
-    .foot{
+    /* .foot{
       height: 800px;
-    }
+    } */
+   
     </style>
   </head>
-  <br>
+  
     <header>
       <h1>Zebo Homes</h1>
       <!-- <img src="" alt="header image" /> -->
@@ -125,6 +206,8 @@
         <li><a href="Exercise2.html">Exercise2</a></li>
         <li><a href="Exercise3.html">Exercise3</a></li>
         <li><a href="Exercise4.html">Exercise4</a></li>
+        <li><a href="cssPractice.html">CSS Practice Set</a></li>
+
 
       </ul>
     </nav>
@@ -153,76 +236,82 @@
 <div class="point" >
   <div class="container">
     <div class="box box-one">
-      <img src="img/photo-1455619452474-d2be8b1e70cd.jpg" alt="dd" />
+     <a href="img/photo-1455619452474-d2be8b1e70cd.jpg" target="_blank"><img src="img/photo-1455619452474-d2be8b1e70cd.jpg" alt="dd" /></a> 
     </div>
 
     <div class="box box-two">
-      <img src="img/pexels-airamdphoto-20873207.jpg" alt="dd" />
+      <a href="img/pexels-airamdphoto-20873207.jpg" target="_blank"><img src="img/pexels-airamdphoto-20873207.jpg" alt="dd" /></a>
     </div>
     <div class="box box-three">
-      <img src="img/pexels-elevate-1267321.jpg" alt="dd" />
+    <a href="img/pexels-elevate-1267321.jpg">  <img src="img/pexels-elevate-1267321.jpg" alt="dd" /></a>
     </div>
-    <div class="box box-four"><img src="img/download.jpg" alt="" /></div>
+    <div class="box box-four">
+      <a href="img/download.jpg"><img src="img/download.jpg" alt="" />
+      </a>
+    </div>
     <div class="box box-five">
-      <img src="img/pexels-vince-2227832.jpg" alt="" />
+      <a href="img/pexels-vince-2227832.jpg"><img src="img/pexels-vince-2227832.jpg" alt="" /></a>
     </div>
     <div class="box box-six">
-      <img src="img/pexels-orlovamaria-4915847.jpg" alt="" />
+      <a href="img/pexels-orlovamaria-4915847.jpg"><img src="img/pexels-orlovamaria-4915847.jpg" alt="" /></a>
     </div>
     <div class="box box-seven">
-      <img src="img/pexels-houzlook-3356416.jpg" alt="" />
+    <a href="img/pexels-houzlook-3356416.jpg">  <img src="img/pexels-houzlook-3356416.jpg" alt="" /></a>
     </div>
-    <div class="box">
-      <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" />
+    <div class="box box-eight">
+    <a href="img/photo-1470549813517-2fa741d25c92.jpg">  <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" /></a>
     </div>
-    <div class="box">
-      <img src="img/pexels-vince-2227832.jpg" alt="" />
+    <div class="box box-nine">
+      <a href="img/pexels-vince-2227832.jpg"><img src="img/pexels-vince-2227832.jpg" alt="" /></a>
     </div>
-    <div class="box">
+    <div class="box box-ten">
+     <a href="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg">
       <img
         src="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"
         alt=""
-      />
+      /></a> </div>
+  
+    <div class="box box-11">
+     <a href="img/pexels-orlovamaria-4915847.jpg"><img src="img/pexels-orlovamaria-4915847.jpg" alt="" /></a> 
     </div>
-    <div class="box box-six">
-      <img src="img/pexels-orlovamaria-4915847.jpg" alt="" />
+    <div class="box box-12">
+      <a href="img/pexels-houzlook-3356416.jpg"><img src="img/pexels-houzlook-3356416.jpg" alt="" /></a>
     </div>
-    <div class="box box-seven">
-      <img src="img/pexels-houzlook-3356416.jpg" alt="" />
+    <div class="box box-13">
+      <a href="img/photo-1470549813517-2fa741d25c92.jpg"><img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" /></a>
     </div>
-    <div class="box">
-      <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" />
+    <div class="box box-14">
+     <a href="img/pexels-vince-2227832.jpg"><img src="img/pexels-vince-2227832.jpg" alt="" /></a> 
     </div>
-    <div class="box">
-      <img src="img/pexels-vince-2227832.jpg" alt="" />
-    </div>
-    <div class="box">
-      <img
+    <div class="box box-15">
+      <a href="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"><img
         src="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"
         alt=""
       />
+    </a>
     </div>
-    <div class="box">
-      <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" />
+    <div class="box box-16">
+      <a href="img/photo-1470549813517-2fa741d25c92.jpg"><img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="" /></a>
     </div>
-    <div class="box">
-      <img src="img/pexels-vince-2227832.jpg" alt="" />
+    <div class="box box-17">
+     <a href="img/pexels-vince-2227832.jpg"> <img src="img/pexels-vince-2227832.jpg" alt="" /></a>
     </div>
-    <div class="box">
-      <img
+    <div class="box box-18">
+     <a href="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"> <img
         src="img/minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"
         alt=""
       />
+    </a>
     </div>
 </div>
   
     
   </body>
-  <footer>
+  <!-- <footer>
   <div class="foot">
     <video height="1000px" width="100%"  autoplay muted controls>
       <source  src="https://youtu.be/L0PSxBh31NI?si=lCjAOlaGuhbPge0U" type="video/mp4" >
     </video> 
   </div>
-  </footer>
+  </footer> -->
 </html>
