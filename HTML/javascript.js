@@ -427,13 +427,13 @@ function showStars(Rows) {
 //prime number
 
 primes(20);
-function primes(limit){
+function primes(limit) {
 
-    for(let number = 2 ; number <= limit; number++){
-        let isprime =true;
-        for (let fector=2; fector<number; fector++){
-            if (number % fector ===0){
-                isprime=false;
+    for (let number = 2; number <= limit; number++) {
+        let isprime = true;
+        for (let fector = 2; fector < number; fector++) {
+            if (number % fector === 0) {
+                isprime = false;
                 break;
             }
         }
@@ -444,3 +444,224 @@ function primes(limit){
 }
 
 
+
+//object exercise 1
+
+let address = {
+    street: 'a',
+    city: 'b',
+    zipCode: 'c'
+}
+let address1 = {
+    street: 'a1',
+    city: 'b1',
+    zipCode: 'c1'
+}
+
+function showAddress(address, address1) {
+
+    for (let key in address)
+        console.log(key, address[key]);
+
+    for (let key1 in address1)
+        console.log(key1, address1[key1]);
+
+}
+
+showAddress(address);
+
+
+// EX - 2 factory function
+
+let home = homeAddress('a', 'b', 'c');
+
+console.log(home)
+
+function homeAddress(street, city, zip) {
+    return {
+        city,
+        street,
+        zip
+    };
+}
+
+
+// pascalotation 
+
+let home1 = new Address('a', 'b', 'c');
+
+console.log(home1)
+
+function Address(street, city, zip) {
+    this.street = street;
+    this.city = city;
+    this.zip = zip;
+
+}
+
+/// 
+
+
+let add1 = new Address('a', 'b', 'c');
+let add2 = new Address('a', 'b', 'c');
+
+function areEqual(add1, add2) {
+    return add1.city === add2.city &&
+        add1.street === add2.street &&
+        add1.zip === add2.zip;
+}
+
+
+function areSame(add1, add2) {
+    return add1 === add2
+}
+
+
+
+console.log(areEqual(add1, add2));
+
+console.log(areSame(add1, add2));
+
+// blog post
+
+
+
+let post = new Post('a', 'b', 'c')
+
+console.log(post);
+
+
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.Comments = [{ ko: "joy" }];
+    this.isLive = false;
+
+}
+
+
+
+// array from range 1
+
+const numbers = arrayFromRange(-10, -4);
+console.log(numbers);
+
+function arrayFromRange(min, max) {
+
+    const output = [];
+    for (let i = min; i <= max; i++)
+        output.push(i);
+    return output;
+}
+
+// Include 2
+
+
+const page = [1, 2, 3, 4];
+
+console.log(includes11(page, 1));
+
+
+function includes11(array11, searElement) {
+    for (let element of array11)
+
+        if (element === searElement)
+            return true;
+    return false;
+
+}
+
+
+// Execpt =3
+
+const num = [1, 2, 3, 4];
+
+const output = execpt(num, [1]);
+
+console.log(output);
+
+function execpt(array, excluded) {
+    const output = [];
+    for (let ele of array)
+
+        if (!excluded.includes(ele))
+            output.push(ele);
+    return output;
+
+}
+
+//move
+
+const mm1 = [1, 2, 3, 4];
+
+const output11 = move(mm1, 3, 0);
+
+
+
+console.log(mm1);
+
+function move(array, index, offset) {
+    const position = index + offset;
+    if (position >= array.length || position < 0) {
+        console.error('Invalid Offset');
+        return;
+    }
+
+    const output11 = [...array];
+    const elemettt = output11.splice(index, 1)[0];
+    output11.splice(position, 0, elemettt);
+    return output11;
+}
+
+
+
+/// 
+
+const member = [1, 2, 4,3, 4, 5];
+
+const count = countOccurence(member, 4);
+console.log(count);
+
+function countOccurence(array, searchelement) {
+
+    //     let count =0;
+
+    //      for(let kil of array)
+    //         if (kil === searchelement)
+    //             count++;
+    //         return count
+
+    //  }
+
+    return array.reduce((accumulator, current) => {
+        const occurence = (current === searchelement) ? 1 : 0;
+        console.log(accumulator, current, searchelement);
+        return accumulator + occurence;
+
+    }, 0);
+}
+
+// max number
+
+const maxNum = [1,2,3,4,9,5,5,5,8];
+
+const max = getMax(maxNum);
+console.log(max);
+
+function getMax(array){
+ if (array.length === 0) return undefined ;
+
+// let max = array[0];
+
+// for (let i =1; i<array.length ; i++)
+//     if(array[i]>max)
+//         max = array[i];
+//      return max ;
+
+// 
+
+return array.reduce((a,b) => (a>b) ? a:b);
+
+}
