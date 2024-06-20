@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <style>
+      .boxes {
+        width: 100%;
+        height: 80vh;
+        background-color: #5ffbf1;
+        display: flex;
+        gap: 40px;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .box {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(11, 34, 32, 0.285);
+        object-fit: cover;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(26, 90, 90);
+      }
+      h1 {
+        position: absolute;
+        display: none;
+      }
+      section {
+        position: relative;
+        padding-top: 4vh;
+        text-align: center;
+        text-shadow: 0px 0px 5px #d40fb0;
+        display: none;
+        background: linear-gradient(to bottom, #0066cc 0%, #00ffff 100%);
+      }
+
+      footer {
+        height: 16vh;
+        width: 100%;
+        background-image: linear-gradient(
+          to top,
+          #d16ba5,
+          #c777b9,
+          #ba83ca,
+          #aa8fd8,
+          #9a9ae1,
+          #8aa7ec,
+          #79b3f4,
+          #69bff8,
+          #52cffe,
+          #41dfff,
+          #46eefa,
+          #5ffbf1
+        );
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Hello Univers</h1>
+    <nav>
+      <button id="button1">Header</button>
+      <button id="button2">footer</button>
+    </nav>
+
+    <section>YES, I am Section</section>
+
+    <div class="boxes">
+      <div class="box box-1">
+        <img src="img/photo-1470549813517-2fa741d25c92.jpg" alt="aa" />
+      </div>
+      <div class="box box-2">
+        <img src="img/pexels-vince-2227832.jpg" alt="aa" />
+      </div>
+      <div class="box box-3">
+        <img
+          src="img/empty-living-room-with-green-sofa-table-empty-white-wall-background_41470-5197.avif"
+          alt="aa"
+        />
+      </div>
+      <div class="box box-4"><img src="img/lufffy1.jpg" alt="aa" /></div>
+      <div class="box box-5">
+        <img src="img//pexels-elevate-1267321.jpg" alt="aa" />
+      </div>
+      <div class="box box-6">
+        <img
+          src="img//minimalist-living-room-interior-with-wooden-floor-decor-on-a-large-wall-generative-ai-photo.jpg"
+          alt="aa"
+        />
+      </div>
+    </div>
+    <footer>
+      <button id="button3">slider</button>
+      <button id="button4">Fotter ++</button>
+      <button id="button5">Footer --</button>
+
+      <anki> hello </anki>
+    </footer>
+    <script src="jq.js"></script>
+  </body>
+</html>
